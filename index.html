@@ -137,7 +137,7 @@
     }
 
     .tag-list,
-    .intro-links {
+    .research-links {
       display: flex;
       flex-wrap: wrap;
       gap: 0.6rem;
@@ -147,8 +147,7 @@
       margin-top: 1.5rem;
     }
 
-    .intro-links {
-      margin-top: 1rem;
+    .research-links {
       color: var(--muted);
       font-size: 0.92rem;
     }
@@ -159,9 +158,11 @@
     }
 
     .tag:not(:last-child)::after,
-    .intro-links a:not(:last-child)::after {
+    .research-links a:not(:last-child)::after,
+    footer a::before {
       content: "·";
       margin-left: 0.6rem;
+      margin-right: 0.6rem;
       color: var(--muted);
     }
 
@@ -203,23 +204,6 @@
       -webkit-line-clamp: 2;
     }
 
-    .contact-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      color: var(--muted);
-    }
-
-    .contact-links a:hover {
-      color: var(--accent);
-    }
-
-    .contact-links a:not(:last-child)::after {
-      content: "·";
-      margin-left: 0.6rem;
-      color: var(--muted);
-    }
-
     footer {
       max-width: var(--max);
       margin: 0 auto;
@@ -255,7 +239,7 @@
       <div class="nav-links">
         <a href="#home">Intro</a>
         <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
+        <a href="#research">Research</a>
       </div>
     </nav>
   </header>
@@ -273,11 +257,6 @@
         <span class="tag">Robotics</span>
         <span class="tag">Quantum</span>
         <span class="tag">Policy</span>
-      </div>
-
-      <div class="intro-links" aria-label="Profile links">
-        <a href="https://github.com/negasiiiii" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="#" target="_blank" rel="noopener noreferrer">Google Scholar</a>
       </div>
     </section>
 
@@ -304,16 +283,17 @@
       </div>
     </section>
 
-    <section id="contact">
-      <p class="eyebrow">Contact</p>
-      <div class="contact-links" aria-label="Contact links">
-        <a href="mailto:your.email@example.com">Email</a>
+    <section id="research">
+      <p class="eyebrow">Research</p>
+      <div class="research-links" aria-label="Research links">
+        <a href="https://github.com/negasiiiii" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">Google Scholar</a>
       </div>
     </section>
   </main>
 
   <footer>
-    © 2026 Negasi
+    © 2026 Negasi<a href="mailto:your.email@example.com">Email</a>
   </footer>
 </body>
 </html>
